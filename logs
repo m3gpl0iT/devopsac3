@@ -1,0 +1,40 @@
+root@W4R1:/home/w4r1/devopsac3# heroku logs
+2020-10-13T20:49:02.301493+00:00 app[api]: Initial release by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:49:02.301493+00:00 app[api]: Release v1 created by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:49:02.486297+00:00 app[api]: Enable Logplex by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:49:02.486297+00:00 app[api]: Release v2 created by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:49:48.000000+00:00 app[api]: Build started by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:50:15.921424+00:00 app[api]: Deploy 389dee25 by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:50:15.921424+00:00 app[api]: Release v3 created by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:50:15.935644+00:00 app[api]: Scaled to web@1:Free by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:50:19.135084+00:00 heroku[web.1]: Starting process with command `python t8.py`
+2020-10-13T20:50:21.342284+00:00 app[web.1]: * Serving Flask app "t8" (lazy loading)
+2020-10-13T20:50:21.342307+00:00 app[web.1]: * Environment: production
+2020-10-13T20:50:21.342342+00:00 app[web.1]: WARNING: Do not use the development server in a production environment.
+2020-10-13T20:50:21.342374+00:00 app[web.1]: Use a production WSGI server instead.
+2020-10-13T20:50:21.342402+00:00 app[web.1]: * Debug mode: off
+2020-10-13T20:50:21.350964+00:00 app[web.1]: * Running on http://0.0.0.0:53666/ (Press CTRL+C to quit)
+2020-10-13T20:50:21.490409+00:00 heroku[web.1]: State changed from starting to up
+2020-10-13T20:50:24.000000+00:00 app[api]: Build succeeded
+2020-10-13T20:50:51.622381+00:00 app[web.1]: 10.52.12.238 - - [13/Oct/2020 20:50:51] "GET / HTTP/1.1" 200 -
+2020-10-13T20:50:51.622521+00:00 heroku[router]: at=info method=GET path="/" host=ac3dv.herokuapp.com request_id=5f068907-886d-45db-8602-1cbae4f9a4e8 fwd="179.153.111.41" dyno=web.1 connect=0ms service=3ms status=200 bytes=187 protocol=https
+2020-10-13T20:50:51.884973+00:00 app[web.1]: 10.9.213.124 - - [13/Oct/2020 20:50:51] "GET /favicon.ico HTTP/1.1" 404 -
+2020-10-13T20:50:51.889501+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=ac3dv.herokuapp.com request_id=7d2f6a1b-7c6d-41ec-8e43-80fb14f7d575 fwd="179.153.111.41" dyno=web.1 connect=1ms service=15ms status=404 bytes=379 protocol=https
+2020-10-13T20:56:23.000000+00:00 app[api]: Build started by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:56:47.045360+00:00 app[api]: Deploy 45421b89 by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:56:47.045360+00:00 app[api]: Release v4 created by user filipe.almeida@aluno.faculdadeimpacta.com.br
+2020-10-13T20:56:47.191285+00:00 heroku[web.1]: Restarting
+2020-10-13T20:56:47.193767+00:00 heroku[web.1]: State changed from up to starting
+2020-10-13T20:56:48.167204+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-10-13T20:56:48.242325+00:00 heroku[web.1]: Process exited with status 143
+2020-10-13T20:56:50.271199+00:00 heroku[web.1]: Starting process with command `python t8.py`
+2020-10-13T20:56:53.124581+00:00 app[web.1]: * Serving Flask app "t8" (lazy loading)
+2020-10-13T20:56:53.124614+00:00 app[web.1]: * Environment: production
+2020-10-13T20:56:53.124670+00:00 app[web.1]: WARNING: Do not use the development server in a production environment.
+2020-10-13T20:56:53.124731+00:00 app[web.1]: Use a production WSGI server instead.
+2020-10-13T20:56:53.124782+00:00 app[web.1]: * Debug mode: off
+2020-10-13T20:56:53.145618+00:00 app[web.1]: * Running on http://0.0.0.0:31858/ (Press CTRL+C to quit)
+2020-10-13T20:56:53.326085+00:00 heroku[web.1]: State changed from starting to up
+2020-10-13T20:56:56.000000+00:00 app[api]: Build succeeded
+2020-10-13T20:57:03.637273+00:00 app[web.1]: 10.13.235.87 - - [13/Oct/2020 20:57:03] "GET / HTTP/1.1" 200 -
+2020-10-13T20:57:03.637714+00:00 heroku[router]: at=info method=GET path="/" host=ac3dv.herokuapp.com request_id=2a209f06-4ed7-4f4a-aefc-61c54ace74bf fwd="179.153.111.41" dyno=web.1 connect=1ms service=7ms status=200 bytes=566 protocol=https
