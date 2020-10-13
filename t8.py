@@ -1,19 +1,35 @@
 import os
 from flask import Flask, jsonify, request
-from math import sqrt
 
 app = Flask(__name__)
 
 @app.route('/')
-def nao_entre_em_panico():
 
+def def_ciber():
+     limite = 100
+     a = 1
+     b = 0
+     numero = 0
 
-    primos = "Tudo vai dar certo, caros alunos!"
+     testeprimo = "2,"
 
+     while b < limite:
+     	primo = 1
 
-    return primos
+     	for i in range(2,numero):
+     		if numero % i == 0:
+     			primo = 0
+     			break
+     	if (primo):
+     		testeprimo = testeprimo + str(numero) + ","
+     		b += 1
+     		if(b % 10 == 0):
+     			testeprimo = testeprimo + "</p>"
+     	numero +=1
+     return testeprimo
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
-
+        app.debug = True
+        app.run()
+        port = int(os.environ.get("PORT", 5000))
+        app.run(host='0.0.0.0', port= port)
